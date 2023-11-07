@@ -1,0 +1,29 @@
+.w-layout-cell-image {
+    width: 6rem;
+}
+.w-layout-cell {
+    width: 6rem;
+}
+.w-layout-cell-2 {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.w-layout-cell-3 {
+    width: 16rem;
+    justify-content: center;
+}
+.wf-layout-layout {
+    padding: .5rem;
+    min-height: 76px;
+    grid-template-columns: .25fr 1fr !important;
+    margin-top: 0px;
+}
+.w-layout-cell-4 {
+    width: 3rem;
+    justify-content: center;
+}
+.w-col-stack-2 {
+    
+}
