@@ -2363,7 +2363,7 @@
   }
   
   .navbar {
-    background-color: rgba(221, 221, 221, 0);
+    background-color: #262431;
     justify-content: flex-start;
     margin-top: 0;
     margin-left: 0;
@@ -4479,6 +4479,7 @@
     font-size: 64px;
     font-weight: 800;
     line-height: 83px;
+    margin-top: 0px;
   }
   
   .paragraph-25 {
@@ -4752,7 +4753,7 @@
   
   .top-background {
     height: 17.25rem;
-    background-color: #150d26;
+    background-color: #262431;
   }
   
   .main-container {
@@ -5008,10 +5009,6 @@
   .div-block-79 {
     flex: none;
     padding: 1.5rem 2rem;
-  }
-  
-  .div-accordion-panel {
-    display: none;
   }
   
   .div-contact {
@@ -5661,7 +5658,6 @@
     }
   
     .navbar {
-      background-color: rgba(221, 221, 221, 0);
       align-items: center;
       margin-top: 5px;
       padding-top: 0;
@@ -6678,10 +6674,6 @@
       height: 28px;
     }
   
-    .div-accordion-panel {
-      display: none;
-    }
-  
     .div-contact {
       background-color: #fff;
       padding-top: 90px;
@@ -7150,9 +7142,9 @@
     }
   
     .na-container {
-      justify-content: space-between;
+      justify-content: center;
+      display: flex;
       margin-left: 40px;
-      display: block;
     }
   
     .about-hero-sec {
@@ -10479,7 +10471,6 @@
       margin-right: 20px;
       font-family: Open Sans, sans-serif;
       font-size: 1.12rem;
-      font-weight: 700;
     }
   
     .heading-60 {
