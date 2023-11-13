@@ -19,16 +19,13 @@ import optimizedImageL from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
 
 const EventCard = (props) => {
 
-  const {eventInfo} = props;
-
-  const {type, eventId, title, description, guestInfo, dateInfo} = eventInfo || {};
+  const {title, guestInfo, dateInfo} = props;
 
   const {fullName, designation, imgUrl} = guestInfo || {};
-  const {month, monthShort, date, day, startTime, endTime} = dateInfo || {};
+  const {startTime, endTime} = dateInfo || {};
 
   const formattedTimeRange = `${startTime} - ${endTime}`;
 
-  console.log(dateInfo, "info")
 
   return (
     <div className="div-block-70">

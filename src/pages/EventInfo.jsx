@@ -11,22 +11,31 @@ import { events } from "../data/events";
 const EventInfo = () => {
 
   const { id } = useParams();
-
   const eventInfo = events[id];
 
-  console.log(eventInfo, "eventInfo")
+  const { type, eventId, title, description, guestInfo, dateInfo } = eventInfo || {};
+
+  const { fullName, designation, imgUrl } = guestInfo || {};
+  const { month, monthShort, date, day, startTime, endTime } = dateInfo || {};
+
+  const formattedTimeRange = `${startTime} - ${endTime}`;
+
 
   return (
     <div>
-        <section class="top-background"></section>
-        <div class="w-layout-vflex main-container">
-            <EventCard eventInfo = {eventInfo}/>
-        </div>
-        <AboutEvent/>
-        <Bonus/>
-        <Speaker/>
-        <Faq/>
-        <Masterclass/>
+      <section class="top-background"></section>
+      <div class="w-layout-vflex main-container">
+        <EventCard
+          title={title}
+          guestInfo={guestInfo}
+          dateInfo={dateInfo}
+        />
+      </div>
+      <AboutEvent />
+      <Bonus />
+      <Speaker eventInfo={eventInfo} />
+      <Faq />
+      <Masterclass />
     </div>
   );
 };
