@@ -14,11 +14,14 @@ const EventTile = (props) => {
         <div class="columns-2 w-row">
             {eventsList.map(event => {
 
-                const { title, guestInfo, date, eventId } = event || {};
+                const { title, guestInfo, dateInfo, eventId } = event || {};
+                const { month, day, date, startTime, endTime} = dateInfo || {};
                 const { fullName, designation, imgUrl } = guestInfo || {};
 
+                const formattedDate = `${month} ${date}, ${day} | ${startTime}`
+
                 return (
-                    <div onClick={() => onClick(eventId)} class="column-4 w-col w-col-4 w-col-stack">
+                    <div onClick={() => onClick(eventId)} class="column-4 w-col w-col-4 w-col-stack eventTile">
                         <div class="div-block-65">
                             <img
                                 src="../images/RDZ3N93FSTJ1E0AJ_optimized.png"
@@ -28,7 +31,7 @@ const EventTile = (props) => {
                                 alt=""
                                 class="image-30"
                             />
-                            <h1 class="heading-35">{date}</h1>
+                            <h1 class="heading-35">{formattedDate}</h1>
                             <h1 class="heading-36">{title}</h1>
                             <div
                                 id="w-node-_22b68f77-8b7c-3782-d076-49e36adc00fe-3b3cf9cb"

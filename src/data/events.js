@@ -9,9 +9,14 @@ export const events = {
             designation: "SDE-3 @Samsung", 
             imgUrl: ""
         }, 
-        date: "October 28, Saturday | 11:00 AM", 
-        startDate: "23423",
-        endDate: "23498",
+        dateInfo: {
+            month: "October", 
+            monthShort: "Oct",
+            date: 28, 
+            day: "Saturday", 
+            startTime: "11:00 AM", 
+            endTime: "9:00 PM",
+        },
         isRunning: true
     }, 
     203: {

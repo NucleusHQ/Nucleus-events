@@ -12,13 +12,15 @@ const EventInfo = () => {
 
   const { id } = useParams();
 
-  const event = events[id];
+  const eventInfo = events[id];
+
+  console.log(eventInfo, "eventInfo")
 
   return (
     <div>
         <section class="top-background"></section>
         <div class="w-layout-vflex main-container">
-            <EventCard/>
+            <EventCard eventInfo = {eventInfo}/>
         </div>
         <AboutEvent/>
         <Bonus/>

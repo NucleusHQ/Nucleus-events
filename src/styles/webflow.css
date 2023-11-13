@@ -409,6 +409,9 @@
     float: left;
     margin-left: -20px;
   }
+  .eventTile {
+    cursor: pointer;
+  }
   .w-radio-input {
     margin-top: 3px;
   }
@@ -653,6 +656,7 @@
       position: relative;
       padding: 0;
     }
+    
   }
   @media screen and (max-width: 767px) {
     .w-hidden-main {

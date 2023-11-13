@@ -17,7 +17,19 @@ import optimizedImageL from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
 // import rawpixel2600 from "../images/image-from-rawpixel-id-3344470-original-p-2600.png";
 // import rawpixel3000 from "../images/image-from-rawpixel-id-3344470-original.png";
 
-const EventCard = () => {
+const EventCard = (props) => {
+
+  const {eventInfo} = props;
+
+  const {type, eventId, title, description, guestInfo, dateInfo} = eventInfo || {};
+
+  const {fullName, designation, imgUrl} = guestInfo || {};
+  const {month, monthShort, date, day, startTime, endTime} = dateInfo || {};
+
+  const formattedTimeRange = `${startTime} - ${endTime}`;
+
+  console.log(dateInfo, "info")
+
   return (
     <div className="div-block-70">
       <div className="w-row">
@@ -32,10 +44,7 @@ const EventCard = () => {
           />
           {/* <img src={screenshot2S} loading="lazy" alt="" className="image-34" /> */}
           <h1 className="heading-43">
-            <strong className="bold-text-14">
-              Product Teardown Fundamentals: Masterclass for Aspiring Product
-              Managers
-            </strong>
+            <strong className="bold-text-14">{title}</strong>
           </h1>
         </div>
         <div className="w-col w-col-5 w-col-stack w-col-small-small-stack">
@@ -48,7 +57,7 @@ const EventCard = () => {
             </div>
             <div className="w-layout-cell-2">
               <h1 className="heading-44">Time</h1>
-              <h1 className="heading-45">8:00 PM - 9:30 PM</h1>
+              <h1 className="heading-45">{formattedTimeRange}</h1>
             </div>
           </div>
           <h1 className="heading-46">SPEAKER</h1>
@@ -68,10 +77,8 @@ const EventCard = () => {
               />
             </div>
             <div className="w-layout-cell-3">
-              <h1 className="heading-47">Navneet Sharma</h1>
-              <div className="text-block-48">
-                Co-founder @Airtribe | Ex-Director of Product @ Unacademy
-              </div>
+              <h1 className="heading-47">{fullName}</h1>
+              <div className="text-block-48">{designation}</div>
             </div>
           </div>
           {/* <h1 className="heading-46">SPREAD THE WORD</h1> */}
@@ -114,7 +121,7 @@ const EventCard = () => {
             </div>
           </div> */}
           <a href="#" className="button-15 w-button">
-            Register now for <span>₹299</span>{" "}
+            Register now for <span>FREE</span>{" "}
             <span className="text-span-33">₹999</span>
           </a>
         </div>
