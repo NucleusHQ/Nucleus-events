@@ -19,7 +19,7 @@ import optimizedImageL from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
 
 const EventCard = (props) => {
 
-  const {title, guestInfo, dateInfo} = props;
+  const {title, guestInfo, dateInfo, bannerImage} = props;
 
   const {fullName, designation, imgUrl} = guestInfo || {};
   const {startTime, endTime} = dateInfo || {};
@@ -32,10 +32,10 @@ const EventCard = (props) => {
       <div className="w-row">
         <div className="w-col w-col-7 w-col-stack w-col-small-small-stack">
           <img
-            src={banner}
+            src={bannerImage}
             loading="lazy"
             sizes="100vw"
-            srcSet={`${bannerSmall} 500w, ${bannerMedium} 800w, ${bannerLarge} 1080w, ${bannerL1} 1600w, ${bannerL2} 2000w, ${banner} 2759w`}
+            srcSet={`${bannerImage} 500w, ${bannerImage} 800w, ${bannerImage} 1080w, ${bannerImage} 1600w, ${bannerImage} 2000w, ${bannerImage} 2759w`}
             alt=""
             className="image-33"
           />
@@ -64,12 +64,12 @@ const EventCard = (props) => {
           >
             <div className="w-layout-cell-4">
               <img
-                src={optimizedImageS}
+                src={guestInfo.src}
                 loading="lazy"
                 width="51"
                 sizes="(max-width: 1279px) 51px, 48px"
                 alt=""
-                srcSet={`${optimizedImageM} 500w, ${optimizedImageL} 762w`}
+                srcSet={`${guestInfo.src} 500w, ${guestInfo.src} 762w`}
                 className="image-35"
               />
             </div>

@@ -20,14 +20,20 @@ const EventInfo = () => {
 
   const formattedTimeRange = `${startTime} - ${endTime}`;
 
+  const bannerImage = require(`../images/banner_${eventId}.png`);
+  const src = require("../images/harish.jpeg");
+
+  const formattedGuestInfo = {...guestInfo, src};
+
 
   return (
     <div>
       <section class="top-background"></section>
       <div class="w-layout-vflex main-container">
         <EventCard
+          bannerImage={bannerImage}
           title={title}
-          guestInfo={guestInfo}
+          guestInfo={formattedGuestInfo}
           dateInfo={dateInfo}
         />
       </div>
@@ -37,8 +43,8 @@ const EventInfo = () => {
         targetAudience={targetAudience}
         takeaways={takeaways}
         dateInfo={dateInfo} />
-      <Bonus />
-      <Speaker eventInfo={eventInfo} />
+      {/* <Bonus /> */}
+      <Speaker guestInfo = {formattedGuestInfo}/>
       <Faq />
       <Masterclass />
     </div>
