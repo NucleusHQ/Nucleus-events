@@ -13,7 +13,7 @@ const EventInfo = () => {
   const { id } = useParams();
   const eventInfo = events[id];
 
-  const { type, eventId, title, description, guestInfo, dateInfo } = eventInfo || {};
+  const { type, eventId, title, description, guestInfo, dateInfo, about, whyInfo, targetAudience, takeaways } = eventInfo || {};
 
   const { fullName, designation, imgUrl } = guestInfo || {};
   const { month, monthShort, date, day, startTime, endTime } = dateInfo || {};
@@ -31,7 +31,12 @@ const EventInfo = () => {
           dateInfo={dateInfo}
         />
       </div>
-      <AboutEvent />
+      <AboutEvent
+        aboutInfo={about}
+        whyInfo={whyInfo}
+        targetAudience={targetAudience}
+        takeaways={takeaways}
+        dateInfo={dateInfo} />
       <Bonus />
       <Speaker eventInfo={eventInfo} />
       <Faq />
