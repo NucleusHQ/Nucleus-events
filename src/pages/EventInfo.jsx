@@ -3,7 +3,7 @@ import AboutEvent from "../components/AboutEvent";
 import Bonus from "../components/Bonus";
 import EventCard from "../components/EventCard";
 import Faq from "../components/Faq";
-import Materclass from "../components/Masterclass";
+import Masterclass from "../components/Masterclass";
 import Speaker from "../components/Speaker";
 
 const EventInfo = () => {
@@ -17,7 +17,7 @@ const EventInfo = () => {
         <Bonus/>
         <Speaker/>
         <Faq/>
-        <Materclass/>
+        <Masterclass/>
     </div>
   );
 };
