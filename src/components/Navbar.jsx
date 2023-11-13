@@ -1,3 +1,4 @@
+import menu from "../images/menu.png"
 const Navbar = () => {
   return (
     <div
@@ -31,20 +32,12 @@ const Navbar = () => {
             </a>
           </nav>
           <div class="menu-button w-nav-button">
-            <div
-              data-w-id="47c040fb-44dc-02dc-629c-6a91ab46b16a"
-              data-is-ix2-target="1"
-              class="lottie-animation"
-              data-animation-type="lottie"
-              data-src="documents/lottieflow-menu-nav-09-ffffff-easey.json"
-              data-loop="0"
-              data-direction="1"
-              data-autoplay="0"
-              data-renderer="svg"
-              data-default-duration="2.5"
-              data-duration="0"
-              data-ix2-initial-state="1.5"
-            ></div>
+          <img
+            src={menu}
+            loading="lazy"
+            alt=""
+            class="menu-nav"
+          />
           </div>
         </div>
       </div>

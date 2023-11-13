@@ -7120,7 +7120,6 @@
   
     .menu-button {
       background-color: #262431;
-      margin-top: 10px;
       padding: 0;
       position: static;
     }
@@ -7139,12 +7138,18 @@
   
     .navbar {
       padding-right: 20px;
+      margin-bottom: 12px;
     }
   
     .na-container {
-      justify-content: center;
-      display: flex;
-      margin-left: 40px;
+      justify-content: space-between;
+      display: block;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .menu-nav {
+      width: 17px;
     }
   
     .about-hero-sec {
@@ -8138,7 +8143,7 @@
     }
   
     .na-container {
-      margin-left: 34px;
+      margin-left: 20px;
     }
   
     .heading-19 {
@@ -9347,10 +9352,6 @@
       width: 13%;
     }
   
-    .menu-button {
-      margin-top: 7px;
-    }
-  
     .nav-menu {
       justify-content: flex-end;
       margin-right: 0;
@@ -9359,7 +9360,7 @@
     }
   
     .na-container {
-      margin-left: 20px;
+      margin-left: 15px;
       padding-left: 9px;
     }
   
@@ -9867,7 +9868,7 @@
     }
   
     .logo-nav {
-      width: 110px;
+      width: 80px;
     }
   
     .slide-3 {
