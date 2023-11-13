@@ -9,13 +9,13 @@ import screenshot3S from "../images/Screenshot-1.png";
 import optimizedImageS from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
 import optimizedImageM from "../images/1RQ6E9OJ20YRN5WU_optimized-p-500.png";
 import optimizedImageL from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
-import rawpixel500 from "../images/image-from-rawpixel-id-3344470-original-p-500.png";
-import rawpixel800 from "../images/image-from-rawpixel-id-3344470-original-p-800.png";
-import rawpixel1080 from "../images/image-from-rawpixel-id-3344470-original-p-1080.png";
-import rawpixel1600 from "../images/image-from-rawpixel-id-3344470-original-p-1600.png";
-import rawpixel2000 from "../images/image-from-rawpixel-id-3344470-original-p-2000.png";
-import rawpixel2600 from "../images/image-from-rawpixel-id-3344470-original-p-2600.png";
-import rawpixel3000 from "../images/image-from-rawpixel-id-3344470-original.png";
+// import rawpixel500 from "../images/image-from-rawpixel-id-3344470-original-p-500.png";
+// import rawpixel800 from "../images/image-from-rawpixel-id-3344470-original-p-800.png";
+// import rawpixel1080 from "../images/image-from-rawpixel-id-3344470-original-p-1080.png";
+// import rawpixel1600 from "../images/image-from-rawpixel-id-3344470-original-p-1600.png";
+// import rawpixel2000 from "../images/image-from-rawpixel-id-3344470-original-p-2000.png";
+// import rawpixel2600 from "../images/image-from-rawpixel-id-3344470-original-p-2600.png";
+// import rawpixel3000 from "../images/image-from-rawpixel-id-3344470-original.png";
 
 const EventCard = () => {
   return (
@@ -30,7 +30,7 @@ const EventCard = () => {
             alt=""
             className="image-33"
           />
-          <img src={screenshot2S} loading="lazy" alt="" className="image-34" />
+          {/* <img src={screenshot2S} loading="lazy" alt="" className="image-34" /> */}
           <h1 className="heading-43">
             <strong className="bold-text-14">
               Product Teardown Fundamentals: Masterclass for Aspiring Product
@@ -74,8 +74,8 @@ const EventCard = () => {
               </div>
             </div>
           </div>
-          <h1 className="heading-46">SPREAD THE WORD</h1>
-          <div className="columns-3 w-row">
+          {/* <h1 className="heading-46">SPREAD THE WORD</h1> */}
+          {/* <div className="columns-3 w-row">
             <div className="column-6 w-col w-col-2 w-col-medium-3 w-col-small-3 w-col-tiny-3">
               <img
                 src="../images/image-from-rawpixel-id-3344470-original.png"
@@ -112,7 +112,7 @@ const EventCard = () => {
                 className="image-43"
               />
             </div>
-          </div>
+          </div> */}
           <a href="#" className="button-15 w-button">
             Register now for <span>₹299</span>{" "}
             <span className="text-span-33">₹999</span>
