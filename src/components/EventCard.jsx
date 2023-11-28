@@ -6,6 +6,7 @@ import bannerL1 from "../images/banner-p-1600.png";
 import bannerL2 from "../images/banner-p-2000.png";
 import screenshot2S from "../images/Screenshot-2023-10-23-062019.png";
 import screenshot3S from "../images/Screenshot-1.png";
+import date from "../images/date.svg";
 import optimizedImageS from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
 import optimizedImageM from "../images/1RQ6E9OJ20YRN5WU_optimized-p-500.png";
 import optimizedImageL from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
@@ -19,7 +20,7 @@ import optimizedImageL from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
 
 const EventCard = (props) => {
 
-  const {title, guestInfo, dateInfo, bannerImage} = props;
+  const {title, guestInfo, dateInfo, bannerImage, onRegisterClick} = props;
 
   const {fullName, designation, imgUrl} = guestInfo || {};
   const {startTime, endTime} = dateInfo || {};
@@ -50,7 +51,7 @@ const EventCard = (props) => {
             className="w-layout-layout quick-stack-16 wf-layout-layout"
           >
             <div className="w-layout-cell">
-              <img src={screenshot3S} loading="lazy" width="104" alt="" className="w-layout-cell-image"/>
+              <img src={date} loading="lazy" width="104" alt="" className="w-layout-cell-image"/>
             </div>
             <div className="w-layout-cell-2">
               <h1 className="heading-44">Time</h1>
@@ -117,7 +118,7 @@ const EventCard = (props) => {
               />
             </div>
           </div> */}
-          <a href="#" className="button-15 w-button">
+          <a onClick={onRegisterClick}className="button-15 w-button">
             Register now for <span>FREE</span>{" "}
             <span className="text-span-33">₹999</span>
           </a>

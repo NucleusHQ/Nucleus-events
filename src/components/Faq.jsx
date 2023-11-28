@@ -17,14 +17,16 @@ const AccordionItem = ({ index, title, content, isOpen, onToggle }) => {
       </div>
       {isOpen && (
         <div class="div-accordion-panel">
-          <div class="text-accordion-para">{content}</div>
+          <div class="text-accordion-para">
+            <span dangerouslySetInnerHTML={{__html: content}}></span>
+          </div>
         </div>
       )}
     </div>
   );
 };
 
-const AccordionContainer = () => {
+const AccordionContainer = ({faqList = []}) => {
   const [openAccordions, setOpenAccordions] = useState([]);
 
   const handleToggle = (index) => {
@@ -35,6 +37,26 @@ const AccordionContainer = () => {
     }
     console.log(openAccordions);
   };
+
+
+  return (
+    <div>
+      {faqList.map((faqInfo, index) => {
+
+        const  {question, answer} = faqInfo || {};
+
+        return (
+          <AccordionItem
+            index={index}
+            title={question}
+            content={answer}
+            isOpen={openAccordions.includes(index)}
+            onToggle={handleToggle}
+          />
+        )
+      })}
+    </div>
+  )
 
   return (
     <div>
@@ -62,7 +84,7 @@ const AccordionContainer = () => {
 
 // export default AccordionContainer;
 
-const Faq = () => {
+const Faq = ({faqList}) => {
   return (
     <section class="section-25">
       <div class="div-block-85">
@@ -71,7 +93,7 @@ const Faq = () => {
           <strong class="bold-text-241">FAQ's</strong>
         </h1>
         <div class="div-accordion--wrapper">
-          <AccordionContainer />
+          <AccordionContainer faqList = {faqList}/>
         </div>
       </div>
     </section>
