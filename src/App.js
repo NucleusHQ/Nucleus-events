@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Router>
         <Routes>
-          <Route exact path="/events" element={<Events />} />
-          <Route path="/events/:id" element={<EventInfo />} />
+          <Route exact path="/" element={<Events />} />
+          <Route path="/:id" element={<EventInfo />} />
         </Routes>
       </Router>
       <Footer/>
