@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const AccordionItem = ({ index, title, content, isOpen, onToggle }) => {
   return (
-    <div class="div-accordion1">
+    <div onClick={() => onToggle(index)} class="div-accordion1">
       <div
         data-w-id="255c8c82-b5c3-ee66-8658-c03b0729e045"
         class="div-accordion-header"
@@ -11,7 +11,7 @@ const AccordionItem = ({ index, title, content, isOpen, onToggle }) => {
         <h1 class="heading-60">
           <strong class="bold-text-10">{title}</strong>
         </h1>
-        <div class="div-block-79" onClick={() => onToggle(index)}>
+        <div class="div-block-79">
           <img src={image} loading="lazy" alt="" class="image-41" />
         </div>
       </div>

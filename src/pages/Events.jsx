@@ -22,7 +22,7 @@ const Events = () => {
   })
 
   const handleClick = (eventId) => {
-      navigate(`/events/${eventId}`);
+      navigate(`/${eventId}`);
   }
 
   return (

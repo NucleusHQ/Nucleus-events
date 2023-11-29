@@ -1,5 +1,11 @@
 import menu from "../images/menu.png"
 const Navbar = () => {
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    window.location.href = "https://nucleushq.io";
+  }
+
   return (
     <div
       data-animation="default"
@@ -11,7 +17,7 @@ const Navbar = () => {
       class="navbar w-nav"
     >
       <div class="na-container w-container">
-        <a href="index.html" class="brand w-nav-brand">
+        <a onClick={handleLogoClick} class="brand w-nav-brand">
           <img
             src="https://assets-global.website-files.com/64ec355c1d4114b50bd5f475/64ec36773e9f2319bdcf9ce5_nucleus.svg"
             loading="lazy"

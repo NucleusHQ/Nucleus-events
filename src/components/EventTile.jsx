@@ -10,11 +10,16 @@ const EventTile = (props) => {
 
     const { eventsList, onClick } = props;
 
+    const founderUrl = require("../images/harish.jpeg");
+
+
     return (
         <div class="columns-2 w-row">
             {eventsList.map(event => {
 
                 const { title, guestInfo, dateInfo, eventId } = event || {};
+                const bannerImage = require(`../images/banner_${eventId}.png`);
+
                 const { month, day, date, startTime, endTime} = dateInfo || {};
                 const { fullName, designation, imgUrl } = guestInfo || {};
 
@@ -24,10 +29,9 @@ const EventTile = (props) => {
                     <div onClick={() => onClick(eventId)} class="column-4 w-col w-col-4 w-col-stack eventTile">
                         <div class="div-block-65">
                             <img
-                                src="../images/RDZ3N93FSTJ1E0AJ_optimized.png"
+                                src={bannerImage}
                                 loading="lazy"
                                 sizes="(max-width: 479px) 90vw, (max-width: 767px) 69vw, (max-width: 991px) 56vw, (max-width: 8900px) 31vw, 2759px"
-                                srcSet={`${imageS} 500w,  800w, ${imageM} 1080w, ${imageL} 1600w, ${imageL1} 2000w, ${imageL2} 2759w`}
                                 alt=""
                                 class="image-30"
                             />
@@ -39,7 +43,7 @@ const EventTile = (props) => {
                             >
                                 <div class="w-layout-cell">
                                     <img
-                                        src={founder}
+                                        src={founderUrl}
                                         loading="lazy"
                                         width="86"
                                         alt=""

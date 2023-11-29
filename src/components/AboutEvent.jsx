@@ -8,22 +8,28 @@ const AboutEvent = (props) => {
 
   const { aboutInfo, whyInfo, targetAudience, takeaways, dateInfo } = props;
 
-  const {startTime, endTime} = dateInfo || {};
+  const { startTime, endTime } = dateInfo || {};
 
   const formattedTimeRange = `${startTime} - ${endTime}`;
 
   return (
     <section class="section-23">
       <div class="div-block-71">
-        <h1 class="heading-48">About the Event</h1>
-        {aboutInfo.map(item => {
-          return <p dangerouslySetInnerHTML={{ __html: item }} class="paragraph-27"></p>
-        })}
-
-        <h1 class="heading-65">{whyInfo.title}</h1>
-        {whyInfo.content.map(item => {
-          return <p dangerouslySetInnerHTML={{ __html: item }} class="paragraph-27"></p>
-        })}
+      <h1 class="heading-49">
+          <strong>What you will learn from the event </strong>
+        </h1>
+        <div class="columns-4 w-row">
+          {takeaways.map((item, index) => {
+            return (
+              <div class="w-col w-col-4 w-col-stack">
+                <div class="div-block-72">
+                  <h1 class="heading-51">{`0` + String(Number(index) + 1)}</h1>
+                  <h1 class="heading-52">{item}</h1>
+                </div>
+              </div>
+            )
+          })}
+        </div>
         <h1 class="heading-49">
           <strong class="bold-text-15">Who Should Join</strong>
         </h1>
@@ -75,21 +81,10 @@ const AboutEvent = (props) => {
             })}
           </div>
         </div>
-        <h1 class="heading-49">
-          <strong>Key takeaways</strong>
-        </h1>
-        <div class="columns-4 w-row">
-          {takeaways.map((item, index) => {
-            return (
-              <div class="w-col w-col-4 w-col-stack">
-                <div class="div-block-72">
-                  <h1 class="heading-51">{`0` + String(Number(index) + 1)}</h1>
-                  <h1 class="heading-52">{item}</h1>
-                </div>
-              </div>
-            )
-          })}
-        </div>
+     
+
+        <AboutEventSection aboutInfo={aboutInfo} />
+        <WhyEventSection whyInfo={whyInfo}/>
         <h1 class="heading-49">
           <strong>Schedule</strong>
         </h1>
@@ -162,3 +157,28 @@ const AboutEvent = (props) => {
 };
 
 export default AboutEvent;
+
+
+
+const AboutEventSection = ({ aboutInfo }) => {
+  return (
+    <div>
+      <h1 class="heading-48">About the Event</h1>
+      {aboutInfo.map(item => {
+        return <p dangerouslySetInnerHTML={{ __html: item }} class="paragraph-27"></p>
+      })}
+    </div>
+  )
+}
+
+
+const WhyEventSection = ({whyInfo}) => {
+  return (
+    <div>
+      <h1 class="heading-65">{whyInfo.title}</h1>
+      {whyInfo.content.map(item => {
+        return <p dangerouslySetInnerHTML={{ __html: item }} class="paragraph-27"></p>
+      })}
+    </div>
+  )
+}
