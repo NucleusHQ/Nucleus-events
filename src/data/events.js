@@ -2,6 +2,7 @@ export const events = {
     101: {
         category: "tofu",
         eventId: 101,
+        isUp: false,
         type: "free",
         title: "Building a Jaw-dropping Chat App",
         checkoutUrl: "",
@@ -73,6 +74,7 @@ export const events = {
     102: {
         category: "tofu",
         eventId: 102,
+        isUp: true,
         type: "free",
         title: "Learn Asynchronous JavaScript The Easy Way",
         checkoutUrl: "",
