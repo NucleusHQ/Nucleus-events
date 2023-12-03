@@ -30,7 +30,7 @@ const Events = () => {
       <HeroSection />
       <section class="section-19">
         <UpcomingEvents onClick = {handleClick} eventsList = {currentEvents}/>
-        <PastEvents eventsList = {pastEvents}/>
+        {/* <PastEvents eventsList = {pastEvents}/> */}
       </section>
     </div>
   );
