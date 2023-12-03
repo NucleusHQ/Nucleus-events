@@ -15,7 +15,7 @@ const EventTile = (props) => {
 
     return (
         <div class="columns-2 w-row">
-            {eventsList.map(event => {
+            {eventsList.filter(item => item.isUp).map(event => {
 
                 const { title, guestInfo, dateInfo, eventId } = event || {};
                 const bannerImage = require(`../images/banner_${eventId}.png`);
