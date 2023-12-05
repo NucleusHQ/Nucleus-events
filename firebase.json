@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "/events/**",
+        "source": "**",
         "destination": "/index.html"
       }
     ]
