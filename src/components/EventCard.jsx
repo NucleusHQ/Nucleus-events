@@ -34,9 +34,7 @@ const EventCard = (props) => {
         <div className="w-col w-col-7 w-col-stack w-col-small-small-stack">
           <img
             src={bannerImage}
-            loading="lazy"
             sizes="100vw"
-            srcSet={`${bannerImage} 500w, ${bannerImage} 800w, ${bannerImage} 1080w, ${bannerImage} 1600w, ${bannerImage} 2000w, ${bannerImage} 2759w`}
             alt=""
             className="image-33"
           />

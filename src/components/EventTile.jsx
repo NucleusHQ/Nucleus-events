@@ -30,8 +30,6 @@ const EventTile = (props) => {
                         <div class="div-block-65">
                             <img
                                 src={bannerImage}
-                                loading="lazy"
-                                sizes="(max-width: 479px) 90vw, (max-width: 767px) 69vw, (max-width: 991px) 56vw, (max-width: 8900px) 31vw, 2759px"
                                 alt=""
                                 class="image-30"
                             />
