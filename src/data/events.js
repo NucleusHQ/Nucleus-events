@@ -41,7 +41,7 @@ export const events = {
         },
         faqList: [{
             "question": "I have registered but I have not received any confirmation email",
-            "answer": "If so, kindly contact support@nucleushq.io and our awesome team will help you out right away"
+            "answer": "If so, kindly contact contact@nucleushq.io and our awesome team will help you out right away"
         },
         {
             "question": "Is the Program Live or Pre-recorded?",
@@ -111,7 +111,7 @@ export const events = {
         },        
         faqList: [{
             "question": "I have registered but I have not received any confirmation email",
-            "answer": "If so, kindly contact support@nucleushq.io and our awesome team will help you out right away"
+            "answer": "If so, kindly contact contact@nucleushq.io and our awesome team will help you out right away"
         },
         {
             "question": "Is the Program Live or Pre-recorded?",
