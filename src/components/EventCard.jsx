@@ -1,22 +1,4 @@
-import banner from "../images/banner.png";
-import bannerSmall from "../images/banner-p-500.png";
-import bannerMedium from "../images/banner-p-800.png";
-import bannerLarge from "../images/banner-p-1080.png";
-import bannerL1 from "../images/banner-p-1600.png";
-import bannerL2 from "../images/banner-p-2000.png";
-import screenshot2S from "../images/Screenshot-2023-10-23-062019.png";
-import screenshot3S from "../images/Screenshot-1.png";
-import date from "../images/date.svg";
-import optimizedImageS from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
-import optimizedImageM from "../images/1RQ6E9OJ20YRN5WU_optimized-p-500.png";
-import optimizedImageL from "../images/1RQ6E9OJ20YRN5WU_optimized.png";
-// import rawpixel500 from "../images/image-from-rawpixel-id-3344470-original-p-500.png";
-// import rawpixel800 from "../images/image-from-rawpixel-id-3344470-original-p-800.png";
-// import rawpixel1080 from "../images/image-from-rawpixel-id-3344470-original-p-1080.png";
-// import rawpixel1600 from "../images/image-from-rawpixel-id-3344470-original-p-1600.png";
-// import rawpixel2000 from "../images/image-from-rawpixel-id-3344470-original-p-2000.png";
-// import rawpixel2600 from "../images/image-from-rawpixel-id-3344470-original-p-2600.png";
-// import rawpixel3000 from "../images/image-from-rawpixel-id-3344470-original.png";
+import dateDec23 from "../images/date-dec-23.svg";
 
 const EventCard = (props) => {
 
@@ -49,7 +31,7 @@ const EventCard = (props) => {
             className="w-layout-layout quick-stack-16 wf-layout-layout"
           >
             <div className="w-layout-cell">
-              <img src={date} loading="lazy" width="104" alt="" className="w-layout-cell-image"/>
+              <img src={dateDec23} loading="lazy" width="104" alt="" className="w-layout-cell-image"/>
             </div>
             <div className="w-layout-cell-2">
               <h1 className="heading-44">Time</h1>

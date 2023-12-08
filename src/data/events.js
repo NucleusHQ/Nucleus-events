@@ -16,12 +16,12 @@ export const events = {
             He firmly believes in the power of consistent, mindful effort as the cornerstone of success, encouraging fellow developers to embrace the process rather than fixate on the outcome.`
         },
         dateInfo: {
-            month: "October",
-            monthShort: "Oct",
-            date: 28,
+            month: "December",
+            monthShort: "Dec",
+            date: 23,
             day: "Saturday",
-            startTime: "11:00 AM",
-            endTime: "9:00 PM",
+            startTime: "7:00 PM",
+            endTime: "8:00 PM",
         },
         about: ["<strong>🚀 Insight into In-Demand Skills:</strong> Understand why recruiters and hiring managers are on the lookout for professionals with chat application expertise.",
             "<strong>🌐 Real-Time Communication Mastery:</strong> Dive into the mechanics of real-time communication, unlocking the secrets behind seamless interactions.",
@@ -41,7 +41,7 @@ export const events = {
         },
         faqList: [{
             "question": "I have registered but I have not received any confirmation email",
-            "answer": "If so, kindly contact support@nucleushq.io and our awesome team will help you out right awa"
+            "answer": "If so, kindly contact support@nucleushq.io and our awesome team will help you out right away"
         },
         {
             "question": "Is the Program Live or Pre-recorded?",
@@ -88,12 +88,12 @@ export const events = {
             He firmly believes in the power of consistent, mindful effort as the cornerstone of success, encouraging fellow developers to embrace the process rather than fixate on the outcome.`
         },
         dateInfo: {
-            month: "October",
-            monthShort: "Oct",
-            date: 28,
+            month: "December",
+            monthShort: "Dec",
+            date: 23,
             day: "Saturday",
-            startTime: "11:00 AM",
-            endTime: "9:00 PM",
+            startTime: "7:00 PM",
+            endTime: "8:00 PM",
         },
         about: ["In this masterclass, Harish Neel, Software Engineer at Samsung, will help you dive deep into the world of asynchronous programming with JavaScript. Asynchronous JavaScript is a crucial concept for backend engineers and developers working with web applications, as it enables efficient handling of tasks that may take time to complete.", 
         "The Masterclass will begin with an exploration of the fundamentals of asynchronous programming, providing a solid understanding of its importance and how it works in JavaScript. You will then learn how to work with callbacks, promises, and the modern async/await syntax, which are powerful tools for managing asynchronous tasks and improving code readability. It will also cover best practices for error handling and demonstrate how to effectively manage the control flow of asynchronous operations."
@@ -111,7 +111,7 @@ export const events = {
         },        
         faqList: [{
             "question": "I have registered but I have not received any confirmation email",
-            "answer": "If so, kindly contact support@nucleushq.io and our awesome team will help you out right awa"
+            "answer": "If so, kindly contact support@nucleushq.io and our awesome team will help you out right away"
         },
         {
             "question": "Is the Program Live or Pre-recorded?",

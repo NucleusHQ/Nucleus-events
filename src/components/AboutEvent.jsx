@@ -1,6 +1,6 @@
 import download from "../images/download.svg"
 import live from "../images/live.png"
-import month from "../images/24oct.png"
+import dateDec23 from "../images/date-dec-23.svg";
 import image from "../images/Screenshot-2023-10-24-114611.png"
 import workshop from "../images/workshop-resources.15ffb2a.svg"
 
@@ -92,7 +92,7 @@ const AboutEvent = (props) => {
           <div class="w-row">
             <div class="column-13 w-col w-col-2 w-col-medium-4 w-col-small-4 w-col-tiny-4">
               <img
-                src={month}
+                src={dateDec23}
                 loading="lazy"
                 width="85"
                 alt=""
