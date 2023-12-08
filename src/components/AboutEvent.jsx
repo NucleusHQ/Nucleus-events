@@ -18,10 +18,10 @@ const AboutEvent = (props) => {
       <h1 class="heading-49">
           <strong>What you will learn from the event </strong>
         </h1>
-        <div class="columns-4 w-row">
+        <div class="columns-4 w-row learnings">
           {takeaways.map((item, index) => {
             return (
-              <div class="w-col w-col-4 w-col-stack">
+              <div class="w-col w-col-4 w-col-stack learning-block">
                 <div class="div-block-72">
                   <h1 class="heading-51">{`0` + String(Number(index) + 1)}</h1>
                   <h1 class="heading-52">{item}</h1>

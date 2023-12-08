@@ -8,9 +8,9 @@ const AccordionItem = ({ index, title, content, isOpen, onToggle }) => {
         data-w-id="255c8c82-b5c3-ee66-8658-c03b0729e045"
         class="div-accordion-header"
       >
-        <h1 class="heading-60">
+        <p class="heading-60">
           <strong class="bold-text-10">{title}</strong>
-        </h1>
+        </p>
         <div class="div-block-79">
           <img src={image} loading="lazy" alt="" class="image-41" />
         </div>

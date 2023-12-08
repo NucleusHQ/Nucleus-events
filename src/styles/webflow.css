@@ -574,6 +574,9 @@
   .w-col-4 {
     width: 33.33333333%;
   }
+  .learning-block {
+    width: 18rem;
+  }
   .w-col-5 {
     width: 41.66666667%;
   }
@@ -656,7 +659,9 @@
       position: relative;
       padding: 0;
     }
-    
+    .learning-block {
+      margin-top: 15px;
+    }
   }
   @media screen and (max-width: 767px) {
     .w-hidden-main {
