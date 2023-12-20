@@ -1,4 +1,5 @@
 import dateDec23 from "../images/date-dec-23.svg";
+import CountdownTimer from "./CountdownTimer";
 
 const EventCard = (props) => {
 
@@ -102,6 +103,7 @@ const EventCard = (props) => {
             Register now for <span>FREE</span>{" "}
             <span className="text-span-33">₹999</span>
           </a>
+          <CountdownTimer dateInfo={dateInfo}/>
         </div>
       </div>
     </div>
