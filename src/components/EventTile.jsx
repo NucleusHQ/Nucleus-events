@@ -1,11 +1,3 @@
-import imageS from "../images/RDZ3N93FSTJ1E0AJ_optimized-p-500.png"
-import imageM from "../images/RDZ3N93FSTJ1E0AJ_optimized-p-800.png"
-import imageL from "../images/RDZ3N93FSTJ1E0AJ_optimized-p-1600.png"
-import imageL1 from "../images/RDZ3N93FSTJ1E0AJ_optimized-p-2000.png"
-import imageL2 from "../images/RDZ3N93FSTJ1E0AJ_optimized.png"
-import founder from "../images/EJSTCS8HFI8OP7KH_optimized.png"
-
-
 const EventTile = (props) => {
 
     const { eventsList, onClick } = props;
@@ -14,7 +6,7 @@ const EventTile = (props) => {
 
 
     return (
-        <div class="columns-2 w-row">
+        <div class="columns-2 w-row event-row">
             {eventsList.filter(item => item.isUp).map(event => {
 
                 const { title, guestInfo, dateInfo, eventId } = event || {};
@@ -33,7 +25,7 @@ const EventTile = (props) => {
                                 alt=""
                                 class="image-30"
                             />
-                            <h1 class="heading-35">{formattedDate}</h1>
+                            <h1 class="heading-35 contrast">{formattedDate}</h1>
                             <h1 class="heading-36">{title}</h1>
                             <div
                                 id="w-node-_22b68f77-8b7c-3782-d076-49e36adc00fe-3b3cf9cb"
