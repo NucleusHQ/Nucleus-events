@@ -3,6 +3,18 @@
   margin: auto;
 }
 
+.event-row {
+  display: flex;
+  justify-content: center;
+}
+
+.contrast {
+  background-color: #683fbe;
+  color: white;
+  padding: 8px 0px;
+  padding-left: 8px;
+}
+
 .past-event-container {
   display: flex;
   border: 2px solid #eee;
